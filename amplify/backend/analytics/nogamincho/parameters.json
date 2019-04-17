@@ -1,0 +1,20 @@
+{
+    "appName": "nogamincho",
+    "roleName": "pinpointLambdaRole9af1acfe",
+    "cloudWatchPolicyName": "cloudWatchPolicy9af1acfe",
+    "pinpointPolicyName": "pinpointPolicy9af1acfe",
+    "authPolicyName": "pinpoint_amplify_9af1acfe",
+    "unauthPolicyName": "pinpoint_amplify_9af1acfe",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}
